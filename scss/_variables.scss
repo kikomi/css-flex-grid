@@ -1,0 +1,73 @@
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-grid-classes:       true !default;
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+  xxs: 0,
+  xs: 320px,
+  sm: 600px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px
+) !default;
+
+@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+@include _assert-starts-at-zero($grid-breakpoints);
+
+
+// Grid containers
+//
+// Define the maximum width of the `.container` elements for different screen sizes.
+$container-max-widths: (
+  xxs: 242px,
+  xs: 288px,
+  sm: 568px,
+  md: 712px,
+  lg: 954px,
+  xl: 1204px
+) !default;
+
+@include _assert-ascending($container-max-widths, "$container-max-widths");
+
+
+// Grid columns
+//
+// Set the number of columns in the grid.
+
+$grid-columns:                12 !default;
+
+// Grid gutters
+//
+// Define the paddings between grid columns for different screen sizes.
+$grid-gutter-widths: (
+  xxs: 16px,  
+  xs: 16px,
+  sm: 16px,
+  md: 20px,
+  lg: 30px,
+  xl: 32px
+) !default;
+
+// Grid container paddings
+//
+// Define the paddings for grid the `.container` elements for different screen sizes.
+$grid-container-paddings: (
+  xxs: 16px,
+  xs: 16px,
+  sm: 16px,
+  md: 28px,
+  lg: 35px,
+  xl: 38px
+) !default;

@@ -1,0 +1,11 @@
+{
+	"name": "css-flex-grid",
+	"description": "CSS Grid System based on Bootstrap Grid system",
+	"license": "MIT",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"build-test": "sass ./scss/main.scss ./dist/css-flex-grid.css",
+		"build": "sass ./scss/main.scss ./dist/css-flex-grid.min.css  --style compressed"
+	}
+}
